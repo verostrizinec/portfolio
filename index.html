@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Veronica Strizinec</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Porftolio Veronica Strizinec</h1>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html#sobreMi">Sobre Mi</a></li>
+            <li><a href="index.html#cursos">Cursos</a></li>
+            <li><a href="index.html#proyectos">Proyectos</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <article id="sobreMi">
+        <h2>Sobre mi</h2>
+        <p class="miHistoria text-20 text-black">
+        Mi nombre es Veronica Strizinec, tengo 34 años y vivo en Berazategui, Buenos Aires, Argentina. Soy Licenciada en Administración de Empresas, trabajo en una Pyme y en.
+        </p>
+        <p class="text-20 text-black">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo ullam maiores quasi laborum inventore tempore, vero, id est, officiis accusantium! Ea omnis cumque sed consequuntur maiores natus, itaque similique?  
+        </p>
+        <p class="papi text-32 text-black">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quos incidunt explicabo sunt nostrum vero excepturi temporibus sint ducimus voluptatem quasi animi, sed nobis magni iusto fugiat, nam consequuntur labore?
+        </p>
+        <a href="index.html#navbar">👆</a>
+    </article>
+
+    <article id="cursos">
+        <h2>Cursos</h2>
+        <a href="index.html#navbar">👆</a>
+        <h3>Desarrollo Web</h3> <!--selector de hijo-->
+        <h4>CoderHouse</h4> <!--selector de hijo directo-->
+        <ul class="desarrolloWeb"> <!--la clase del selector de hijo directo-->
+            <li><b>HTML</b></li>
+            <li><b>CSS</b></li>
+        </ul>
+        <ul class="complementoDesarrollo"> <!--selector de hijo descendiente-->    
+            <li><b>GIT</b></li>
+            <li><b>GITHUB</b></li>
+            <li><b>SASS</b></li>
+        </ul>
+        <h3>JavaScript</h3> <!--selector de hermano-->
+        <h4 class="hermanosGeneral">CoderHouse</h4> <!--selector de hermano en general-->
+        <h4>Este curso aún está en desarrollo</h4> <!--selector de hermano adyacente-->
+        <li><b>Sigo practicando JavaScript</b></li>
+         
+
+    </article>
+    
+    <article id="proyectos">
+        <h2>Proyectos</h2>
+        <a href="index.html#navbar">👆</a>
+        <nav class="susulenta">
+        <h4>Mi primer proyecto fue SUSULENTA. Te dejo las paginas:</h4>
+        <li class="menu-item cursos button"><a href="https://susulenta.000webhostapp.com/index.html" target="_blank">Inicio</a></li> <!--el target="_blank" hace que la pagina se redireccione A OTRA PESTAÑA-->
+        <li><a href="https://susulenta.000webhostapp.com/pages/sobrenosotros.html" target="_blank">Sobre Nosotros</a></li>
+        <li><a href="http://susulenta.000webhostapp.com/pages/galeria.html" target="_blank">Galeria</a></li>
+        <li><a href="https://susulenta.000webhostapp.com/pages/precios.html" target="_blank">Precios</a></li>
+        <li><a href="https://susulenta.000webhostapp.com/pages/contacto.html" target="_blank">Contacto</a></li>
+        </nav>
+    </article>
+
+    <article id="contacto">
+        <h2>Contacto</h2>
+        <a href="index.html#navbar">👆</a>
+
+    
+        <form action="" class="formulario"> <!--el action dice donde se va a enviar el formulario. El metodo GET para envio lo manda por la URL, el metodo POST lo envia de forma oculta-->
+            <label for="">Usuario</label> <!--el atributo for se vincula con el imput del formulario con el mismo id-->
+            <input type="text" name="nombre" id="nombre" placeholder="Escribi tu nombre" required> <!--el atributo name es el nombre del formulario-->
+            <br>
+            <label for="">Email</label> <!--el atributo for se vincula con el imput del formulario con el mismo id-->
+            <input type="email" name="correo" placeholder="Escribi tu email" required>
+            <br>
+            <input type="submit">
+            <input type="reset">
+            <p>Elige tu idioma</p>
+            <select name="idioma">
+            <option value="es" selected>Español</option> <!--selected es la opcion por defecto-->
+            <option value="pt">Portugues</option>
+            <option value="en">Ingles</option>
+            <option value="fr">Frances</option>
+            <option value="it">Italiano</option>
+        </select>
+        <p>Elige tu mensaje preferido:</p>
+        <input type="radio" name="lenguaje" id="radio-js" value="js">
+        <label for="radio-js">JavaScript</label>
+        <input type="radio" name="lenguaje" id="radio-py" value="py" checked> <!--el checked marca por defecto python-->
+        <label for="radio-py">Python</label>
+        <input type="radio" name="lenguaje" id="radio-php" value="php">
+        <label for="radio-php">PHP</label>
+            <input type="submit">
+            <input type="reset">
+        
+        </form>
+
+        <hr>
+        <h3>Esto despues se borra, es practica!</h3>
+        <article id="algoritmoCSS">
+            <h2>El algoritmo de CSS</h2>
+            <ul>
+                <li>La Cascada</li>
+                <li>La especificidad</li>
+                <li>La herencia</li>
+            </ul>
+
+        </article>
+
+
+    <footer id="footer">
+        <div class="textFooter">
+            <p>Hecho con 💗 Veronica Strizinec</p>
+            <p>"Persevera y triunfarás" 😇</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
