@@ -8,119 +8,122 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Porftolio Veronica Strizinec</h1>
-
-    <nav id="navbar">
+    <header id="header">
+        <img class="logoVero" src="./images/logoVero.jpg" alt="Logo Vero Strizinec">
+        <nav class="navbar">
         <ul>
             <li><a href="index.html#sobreMi">Sobre Mi</a></li>
             <li><a href="index.html#cursos">Cursos</a></li>
             <li><a href="index.html#proyectos">Proyectos</a></li>
             <li><a href="index.html#contacto">Contacto</a></li>
         </ul>
-    </nav>
-
-    <article id="sobreMi">
-        <h2>Sobre mi</h2>
-        <p class="miHistoria text-20 text-black">
-        Mi nombre es Veronica Strizinec, tengo 34 años y vivo en Berazategui, Buenos Aires, Argentina. Soy Licenciada en Administración de Empresas, trabajo en una Pyme y en.
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container">
+             <h1 class="home__title">
+                Hola 👋 Soy
+                <span class="home__title--decorated">Veronica Strizinec</span>
+                Desarrolladora Frontend
+             </h1>
+             <div class="social__media">
+                <a href="https://www.linkedin.com/in/veronica-stri/" target="_blank" class="socialmedia__link" title="Linkedin">
+                    <img class="linkedin__icon" src="https://img.icons8.com/ios/50/null/linkedin-2--v1.png" alt="Icono Linkedin">
+                </a>
+                <a href="https://github.com/verostrizinec" target="_blank" class="socialmedia__link" title="GitHub">
+                    <img src="https://img.icons8.com/ios/50/null/github--v1.png" alt="Icono GitHub" class="github__icon">
+                 </a>
+                 <a href="https://drive.google.com/file/d/1jZZZkfigjLW0Sb94RjZ-a4CfIYZ7TQ0Y/view?usp=sharing" target="_blank" class="socialmedia__link" title="curriculum">Descargar CV</a>
+             </div>
+            </div>
+            <img src="./images/PHOTO-2021-08-25-10-48-43.png" id="fotoVero" alt="Foto Vero Strizinec">
+        </section>
+    <section class="aboutMe" id="aboutMe">    
+        <h2 class="aboutMe__title">Sobre mi</h2>
+        <div class="aboutMe__content">
+        <p class="myHistory text-20 text-black">
+        Mi nombre es <strong>Veronica Strizinec</strong>, tengo 34 años y vivo en Berazategui, Buenos Aires, Argentina. Soy Licenciada en Administración de Empresas y desde el año 2022 estudio Programación.
         </p>
         <p class="text-20 text-black">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo ullam maiores quasi laborum inventore tempore, vero, id est, officiis accusantium! Ea omnis cumque sed consequuntur maiores natus, itaque similique?  
+        Inicié en este mundo de la tecnologia con cursos de CoderHouse donde aprendí <strong>HTML, CSS, Git, GitHub, JavaScript, etc.</strong>
         </p>
-        <p class="papi text-32 text-black">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quos incidunt explicabo sunt nostrum vero excepturi temporibus sint ducimus voluptatem quasi animi, sed nobis magni iusto fugiat, nam consequuntur labore?
+        <p class="father text-32 text-black">
+        Si bien el camino por momentos puede ser frustrante, hago honor a una frase que siempre me decia mi papá: <strong>Perservera y triunfarás.</strong> 😇💗
         </p>
-        <a href="index.html#navbar">👆</a>
-    </article>
+        </div>
+    </section>
 
-    <article id="cursos">
-        <h2>Cursos</h2>
-        <a href="index.html#navbar">👆</a>
-        <h3>Desarrollo Web</h3> <!--selector de hijo-->
-        <h4>CoderHouse</h4> <!--selector de hijo directo-->
-        <ul class="desarrolloWeb"> <!--la clase del selector de hijo directo-->
-            <li><b>HTML</b></li>
-            <li><b>CSS</b></li>
-        </ul>
-        <ul class="complementoDesarrollo"> <!--selector de hijo descendiente-->    
-            <li><b>GIT</b></li>
-            <li><b>GITHUB</b></li>
-            <li><b>SASS</b></li>
-        </ul>
-        <h3>JavaScript</h3> <!--selector de hermano-->
-        <h4 class="hermanosGeneral">CoderHouse</h4> <!--selector de hermano en general-->
-        <h4>Este curso aún está en desarrollo</h4> <!--selector de hermano adyacente-->
-        <li><b>Sigo practicando JavaScript</b></li>
-         
-
-    </article>
+    <section id="proyects" class="proyects">
+        <h2 class="proyects__title">Proyectos</h2>
+        <div class="proyects__grid">
+          <a href="https://susulenta.000webhostapp.com/" class="susulenta"  target="_blank">
+            <img src="./images/Logotipo_Tienda_de_Plantas_Minimalista_Verde_y_Blanco__1_-removebg-preview.png" alt="Logo Susulenta" width="200px" height="200px"></a>
+        <a href="https://tritato.netlify.app/" class="tritato"  target="_blank">
+            <img src="./images/logo-removebg-preview.png" alt="Logo Tritato" width="300px" height="200px"></a>
+        </div>
+    </section>
     
-    <article id="proyectos">
-        <h2>Proyectos</h2>
-        <a href="index.html#navbar">👆</a>
-        <nav class="susulenta">
-        <h4>Mi primer proyecto fue SUSULENTA. Te dejo las paginas:</h4>
-        <li class="menu-item cursos button"><a href="https://susulenta.000webhostapp.com/index.html" target="_blank">Inicio</a></li> <!--el target="_blank" hace que la pagina se redireccione A OTRA PESTAÑA-->
-        <li><a href="https://susulenta.000webhostapp.com/pages/sobrenosotros.html" target="_blank">Sobre Nosotros</a></li>
-        <li><a href="http://susulenta.000webhostapp.com/pages/galeria.html" target="_blank">Galeria</a></li>
-        <li><a href="https://susulenta.000webhostapp.com/pages/precios.html" target="_blank">Precios</a></li>
-        <li><a href="https://susulenta.000webhostapp.com/pages/contacto.html" target="_blank">Contacto</a></li>
-        </nav>
-    </article>
+    <section class="certifications">
+        <h2 class="certifications__title">Certificados</h2>
+        <div class="certifications__grid">
+            <img class="certificado__desarrollo" src="./images/desarrolloWeb (2).png" alt="Certificado de Desarrollo Web" width="700px" height="500px">
+            <img class="certificado__js" src="./images/javaScript.PNG" alt="Certificado de JavaScript" width="700px" height="500px">
+    </section>
 
-    <article id="contacto">
-        <h2>Contacto</h2>
-        <a href="index.html#navbar">👆</a>
+    <section class="skills">
+        <div class="skills__tech">
+            <h2 class="skills__title">Tecnologías</h2>
+            <div class="skills__grid">
+                <article class="skill">
+                    <img src="https://img.icons8.com/color/144/null/html-5--v1.png" alt="Icono HTML">
+                    <strong class="skill_title">HTML</strong>
+                    <img src="https://img.icons8.com/color/144/null/css3.png" alt="Icono CSS">
+                    <strong class="skill_title">CSS</strong>
+                    <img src="https://img.icons8.com/color/144/null/git.png" alt="Icono GIT">
+                    <strong class="skill_title">Git</strong>
+                    <img src="https://img.icons8.com/ios-filled/100/null/github.png"  alt="Icono GitHub">
+                    <strong class="skill_title">GitHub</strong>
+                    <img src="https://img.icons8.com/color/144/null/sass.png"  alt="Icono Sass">
+                    <strong class="skill_title">Sass</strong>
+                    <!--buscar icono de bootstrap-->
+                </article>
+            </div>
+        </div>
+    </section>
 
-    
-        <form action="" class="formulario"> <!--el action dice donde se va a enviar el formulario. El metodo GET para envio lo manda por la URL, el metodo POST lo envia de forma oculta-->
+    <section class="contact">
+        <h2 class="contact__title">Contacto</h2>
+            
+        <form action="" class="form"> <!--el action dice donde se va a enviar el formulario. El metodo GET para envio lo manda por la URL, el metodo POST lo envia de forma oculta-->
             <label for="">Usuario</label> <!--el atributo for se vincula con el imput del formulario con el mismo id-->
             <input type="text" name="nombre" id="nombre" placeholder="Escribi tu nombre" required> <!--el atributo name es el nombre del formulario-->
             <br>
             <label for="">Email</label> <!--el atributo for se vincula con el imput del formulario con el mismo id-->
             <input type="email" name="correo" placeholder="Escribi tu email" required>
             <br>
-            <input type="submit">
-            <input type="reset">
-            <p>Elige tu idioma</p>
-            <select name="idioma">
-            <option value="es" selected>Español</option> <!--selected es la opcion por defecto-->
-            <option value="pt">Portugues</option>
-            <option value="en">Ingles</option>
-            <option value="fr">Frances</option>
-            <option value="it">Italiano</option>
-        </select>
-        <p>Elige tu mensaje preferido:</p>
-        <input type="radio" name="lenguaje" id="radio-js" value="js">
-        <label for="radio-js">JavaScript</label>
-        <input type="radio" name="lenguaje" id="radio-py" value="py" checked> <!--el checked marca por defecto python-->
-        <label for="radio-py">Python</label>
-        <input type="radio" name="lenguaje" id="radio-php" value="php">
-        <label for="radio-php">PHP</label>
+            <label for="">Comentario</label>
+            <textarea placeholder="Dejame tu comentario"></textarea>
+            <br>
             <input type="submit">
             <input type="reset">
         
         </form>
-
-        <hr>
-        <h3>Esto despues se borra, es practica!</h3>
-        <article id="algoritmoCSS">
-            <h2>El algoritmo de CSS</h2>
-            <ul>
-                <li>La Cascada</li>
-                <li>La especificidad</li>
-                <li>La herencia</li>
-            </ul>
-
-        </article>
+    </section>
 
 
-    <footer id="footer">
-        <div class="textFooter">
-            <p>Hecho con 💗 Veronica Strizinec</p>
-            <p>"Persevera y triunfarás" 😇</p>
+    <footer class="footer">
+        <div class="redes__sociales">
+            <a href="https://www.linkedin.com/in/veronica-stri/" target="_blank" class="socialmedia__link" title="Linkedin">
+                <img class="linkedin__icon" src="https://img.icons8.com/ios/50/null/linkedin-2--v1.png" alt="Icono Linkedin">
+            </a>
+            <a href="https://github.com/verostrizinec" target="_blank" class="socialmedia__link" title="GitHub">
+                <img src="https://img.icons8.com/ios/50/null/github--v1.png" alt="Icono GitHub" class="github__icon">
+             </a>
+            <p class="frase__papi">"Persevera y triunfarás" 😇</p>
+            <p class="text__footer">Hecho con 💗 Veronica Strizinec ©</p>
         </div>
     </footer>
-    
+    </main>
 </body>
 </html>
