@@ -53,11 +53,11 @@ p {
 
 
 #navbar a:visited {
-    color: rgb(79, 142, 201);;
+    color: #4f8ec9;
 }
 
 #navbar li:hover{
-    color: rgb(189, 120, 120);
+    color: #bd7878;
 
 } 
 
