@@ -45,6 +45,12 @@ p {
     font-size: 1.2rem;
 }
 
+.papi {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .home__title--decorated {
     font-size: 2.5rem;
     font-style: italic;
