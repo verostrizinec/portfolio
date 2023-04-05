@@ -32,6 +32,11 @@ body {
     
 }
 
+main {
+    margin-left: 260px;
+    margin-right: 260px;
+}
+
 h1 { 
     font-size: 2.5rem;
 }
@@ -45,10 +50,19 @@ p {
     font-size: 1.2rem;
 }
 
+strong {
+    font-weight: bolder;
+    text-shadow: 2px 4px 10px #fc6686;
+}
+
 .papi {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.home__container {
+    padding-top: 20px;
 }
 
 .home__title--decorated {
@@ -59,12 +73,6 @@ p {
     
 }
 
-
-.main { 
-    width: 1200px;
-    height: auto;
-
-}
 
 #header {
     position: sticky;
@@ -86,6 +94,10 @@ p {
     justify-content: flex-end;
 }
 
+li {
+    list-style: none;
+}
+
 
 .logoVero {
     width: 170px;
@@ -103,8 +115,68 @@ p {
     color: #bd7878;
 
 } 
+/* FOTO */
 
-#fotoVero {
+#fotoVero { /* ver como poner una sombra a la foto sin q se vea el cuadrado. Poner la foto a la derecha. */
     width: 600px;
-    height: 500px;
+    height: auto;
+    margin: 0;
+        
+}
+
+#fotoVero img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    
+}
+/* CERTIFICADOS */
+
+
+.certificado__desarrollo {
+    max-width: 100%;
+    width: 600px;
+    height: 450px;
+    border-radius: 1rem;
+    margin-right: 5rem;
+}
+
+.certificado__js {
+    max-width: 100%;
+    width: 600px;
+    height: 450px;
+    border-radius: 1rem;
+}
+
+/* CONTACTO */
+
+.form > * {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align:start;
+}
+
+
+.form input[type="submit"] {
+    background-color: #bd7878;
+    color: #000;
+    font-weight: bold;
+    text-align:start;
+
+}
+
+.form input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+
+/* FOOTER */
+
+.text__footer, .frase__papi {
+    font-size: 0.8rem;
+    text-align: center;
 }

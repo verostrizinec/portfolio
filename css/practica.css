@@ -1,8 +1,0 @@
-/* ESTO DESPUES SE BORRA */
-/* las variables almacenan datos y las declaramos con "--", luego las llamamos con var() */
-
-.custom-props-1 {
-    --primary-color: gray;
-    --font-size: 32px;
-    background-color: var(--primary-color);
-}
