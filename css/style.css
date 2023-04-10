@@ -38,11 +38,11 @@ main {
 }
 
 h1 { 
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     text-shadow: 4px 0px 4px #fc6686;
 }
 
@@ -66,7 +66,7 @@ strong {
 }
 
 .home__title--decorated {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-style: italic;
     color: rgb(247, 99, 131);
     text-shadow: 5px 5px 5px #FDA8BA;
@@ -112,7 +112,7 @@ li {
 }
 
 #navbar li:hover{
-    color: #bd7878;
+    color: #bd7878;     
 
 } 
 
@@ -140,7 +140,7 @@ li {
     width: 600px;
     height: 450px;
     border-radius: 1rem;
-    margin-right: 5rem;
+    margin-right: 8rem;
 }
 
 .certificado__js {
@@ -149,6 +149,24 @@ li {
     height: 450px;
     border-radius: 1rem;
 }
+
+/* practica */
+
+.certificado__desarrollo, .certificado__js {
+    border: thick solid #000;
+    margin-left: auto;
+    margin-bottom: 5rem;
+    width: 700px;
+    height: 550px;
+}
+
+.certifications__grid img {
+    width: 45%;
+    height: 100%;
+    object-fit: cover; /* asi es como pongo la imagen dentro del cuadrado */
+    object-position: center;
+}
+
 
 /* CONTACTO */
 
@@ -164,7 +182,7 @@ li {
 
 
 .form input[type="submit"] {
-    background-color: #bd7878;
+    background-color: rgb(247, 99, 131);
     color: #000;
     font-weight: bold;
     text-align:start;
