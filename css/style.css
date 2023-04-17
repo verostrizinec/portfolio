@@ -154,19 +154,13 @@ a {
 
 /* FOTO */
 
-#fotoVero { /* ver como poner una sombra a la foto sin q se vea el cuadrado. Poner la foto a la derecha. */
+#fotoVero img { /* ver como poner una sombra a la foto sin q se vea el cuadrado. Poner la foto a la derecha. */
     width: 600px;
     height: auto;
     margin: 0;
         
 }
 
-#fotoVero img {
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    
-}
 
 /* CERTIFICADOS */
 
@@ -210,6 +204,18 @@ a {
     flex-direction: row;
     justify-content: center;
 
+}
+
+/* tecnologias */
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    object-fit:contain;
 }
 
 /* CONTACTO */
