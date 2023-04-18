@@ -155,10 +155,28 @@ a {
 /* FOTO */
 
 #fotoVero img { /* ver como poner una sombra a la foto sin q se vea el cuadrado. Poner la foto a la derecha. */
-    width: 600px;
+    /* width: 600px;
     height: auto;
-    margin: 0;
-        
+    margin: 0; */
+        width: 550px;
+        height: auto;
+        object-fit: cover;
+        object-position: 0 50%;
+}
+
+#fotoVero .fotoVero {
+    background-color: #fcc5d2;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+    border-radius: 100%;
+    
+}
+
+#fotoVero .fotoVero:hover {
+     background-color: #f76c8a;
+    border-radius: 80%;
 }
 
 
@@ -214,7 +232,7 @@ a {
     justify-content: space-between;
 }
 
-img {
+.skill img {
     object-fit:contain;
 }
 
