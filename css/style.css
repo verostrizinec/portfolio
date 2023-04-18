@@ -33,6 +33,31 @@ body {
     
 }
 
+.logoVero { /* poner efecto en el logo */
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    
+}
+
+.navbar ul li a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: rgb(247, 99, 131);  
+    text-decoration: none;   
+
+} 
+
 main {
     margin-left: 15%;
     margin-right: 15%;
@@ -51,9 +76,10 @@ p {
     font-size: 1.2rem;
 }
 
-strong {
+strong { 
     font-weight: bolder;
     text-shadow: 2px 4px 10px #f17791;
+
 }
 
 section {
@@ -72,19 +98,26 @@ section {
     flex-direction: row;
 }
 
-.home__title--decorated {
+.home__title--decorated { /* poner que el nombre destacado tenga algun efecto */
     font-size: 3.5rem;
     font-style: italic;
     color: rgb(247, 99, 131);
     text-shadow: 5px 5px 5px #f78ea5;
-    
+
 }
+
+#hi { /* poner efecto de saludo con la mano */
+    display: inline;
+    cursor: pointer;
+
+}
+
 
 .titulo {
     margin-left: 0;
 }
 
-.social__media {
+.social__media { /* poner efecto en los iconos */
     margin-top: 5px;
 }
 
@@ -94,9 +127,6 @@ section {
 .home__title {
     margin-bottom: 0;
 }
-
-
-
 
 #header {
     position: sticky;
@@ -112,12 +142,6 @@ section {
 
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    font-size: 1.3rem;
-    
-}
 
 li {
     list-style: none;
@@ -132,29 +156,9 @@ a {
     
 }
 
-
-.logoVero {
-    width: 170px;
-    height: 170px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-.navbar a:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-.navbar a:hover{
-    color: rgb(247, 99, 131);  
-    text-decoration: none;   
-
-} 
-
 /* FOTO */
 
-#fotoVero img { /* ver como poner una sombra a la foto sin q se vea el cuadrado. Poner la foto a la derecha. */
+#fotoVero img { /* ver como poner una sombra a la foto sin q se vea el cuadrado. Poner que la foto no se vea sobre el navbar */
     /* width: 600px;
     height: auto;
     margin: 0; */
@@ -164,21 +168,55 @@ a {
         object-position: 0 50%;
 }
 
-#fotoVero .fotoVero {
+#fotoVero .fotoVero { /* esto lo hice copy paste, estudiar */
     background-color: #fcc5d2;
     transition-property: background-color;
     transition-duration: 300ms;
     transition-timing-function: ease;
     transition-delay: 0.2s;
     border-radius: 100%;
+        -webkit-animation-name: fotoVero; 
+        animation-name: fotoVero;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes fotoVero {
+        0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        }
+        50% {
+        opacity: 1;
+        }
+        }
+        @keyframes fotoVero {
+        0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        }
+        50% {
+        opacity: 1;
+        }
     
 }
 
 #fotoVero .fotoVero:hover {
-     background-color: #f76c8a;
+     background-color: #f796ab;
     border-radius: 80%;
 }
 
+/* proyectos */
+
+.proyects__grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
 
 /* CERTIFICADOS */
 
@@ -198,12 +236,10 @@ a {
     border-radius: 1rem;
 }
 
-/* practica */
-
 .certificado__desarrollo, .certificado__js {
     border: thick solid #000;
     margin-left: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     width: 700px;
     height: 550px;
 }
@@ -213,16 +249,8 @@ a {
     height: 100%;
     object-fit: cover; /* asi es como pongo la imagen dentro del cuadrado */
     object-position: center;
-}
+} 
 
-/* proyectos */
-
-.proyects__grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
 
 /* tecnologias */
 
@@ -234,6 +262,20 @@ a {
 
 .skill img {
     object-fit:contain;
+}
+
+.skills__grid .skill {
+    transition: opacity 2s ease-out, border-color 3s steps(3), filter 2s ease-in 1s, box-shadow 1.5s linear 2s;
+
+}
+
+.skill img:hover {
+    opacity: 0.90;
+    filter: blur(0.15rem);
+    box-shadow: 1rem 1rem 1.5rem 0.5rem #f76c8a;
+    border-radius: 70%;
+
+    
 }
 
 /* CONTACTO */
