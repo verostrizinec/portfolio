@@ -40,6 +40,27 @@ body {
     justify-content: flex-start;
 }
 
+#header img {
+    transition: transform 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+#header img:hover { /* esto hace que se agrande el logo */
+    transform: perspective(50rem) translateZ(4rem);
+
+}
+
+.social__media a img { 
+    transition: transform 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.social__media a img:hover { /* esto hace que se agrande el logo */
+    transform: perspective(100rem) translateZ(30rem);
+
+}
+
+
 .navbar {
     display: flex;
     align-items: center;
@@ -108,8 +129,7 @@ section {
 
 #hi { /* poner efecto de saludo con la mano */
     display: inline;
-    cursor: pointer;
-
+    cursor: pointer;  
 }
 
 
@@ -205,7 +225,7 @@ a {
 }
 
 #fotoVero .fotoVero:hover {
-     background-color: #f796ab;
+    background-color: #f796ab;
     border-radius: 80%;
 }
 
@@ -218,6 +238,48 @@ a {
 
 }
 
+@keyframes susulenta {
+    from {
+        opacity: 0;
+        transform:rotate(120deg) translateX(0);
+    }
+
+    to {
+        opacity: 2;
+        transform: translateX(-60%);
+    }
+    
+}
+.susulenta:hover {
+    animation-name: susulenta;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+}
+
+@keyframes tritato {
+    from {
+        opacity: 0;
+        transform:rotate(-120deg) translateX(0);
+    }
+
+    to {
+        opacity: 2;
+        transform: translateX(60%);
+    }
+    
+}
+
+.tritato:hover {
+    animation-name: tritato;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+}
 /* CERTIFICADOS */
 
 
@@ -240,8 +302,8 @@ a {
     border: thick solid #000;
     margin-left: auto;
     margin-bottom: 3rem;
-    width: 700px;
-    height: 550px;
+    width: 600px;
+    height: 450px;
 }
 
 .certifications__grid img {
@@ -308,12 +370,36 @@ a {
 
 
 .footer-container {
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content:space-around;
+    align-items: center;
     
 }
-.text__footer, .frase__papi {
+.text__footer {
     font-size: 0.8rem;
     text-align: center;
+}
+
+.frase__papi {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+
+}
+
+.socialmedia__link {
+    padding-right: 30px;
+}
+
+.redes__sociales a img { 
+    transition: transform 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.redes__sociales a img:hover { /* esto hace que se agrande el logo */
+    transform: perspective(100rem) translateZ(30rem);
+
 }
