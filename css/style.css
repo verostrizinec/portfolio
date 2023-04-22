@@ -127,11 +127,35 @@ section {
 
 }
 
-#hi { /* poner efecto de saludo con la mano */
+.hi { /* poner efecto de saludo con la mano */
     display: inline;
     cursor: pointer;  
 }
 
+@keyframes sayHi {
+    0% {
+        opacity: 0;
+        transform: rotateX(0);
+
+    }
+    50% {
+        opacity: 2;
+        transform: rotateX(100deg);
+
+    }
+    100% {
+        opacity: 4;
+        transform: rotateX(200deg);
+
+    }
+    
+}
+
+.hi:hover {
+    animation-name: sayHi;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
 
 .titulo {
     margin-left: 0;
@@ -172,6 +196,9 @@ li {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
     text-shadow: 5px 5px 5px #f76c8a;
     
 }
@@ -326,19 +353,29 @@ a {
     object-fit:contain;
 }
 
-.skills__grid .skill {
-    transition: opacity 2s ease-out, border-color 3s steps(3), filter 2s ease-in 1s, box-shadow 1.5s linear 2s;
+@keyframes skill {
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+
+    }
+    
 }
 
 .skill img:hover {
-    opacity: 0.90;
-    filter: blur(0.15rem);
-    box-shadow: 1rem 1rem 1.5rem 0.5rem #f76c8a;
-    border-radius: 70%;
+    cursor: pointer;
+    animation-name: skill;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 
     
 }
+
 
 /* CONTACTO */
 
