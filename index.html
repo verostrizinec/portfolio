@@ -14,6 +14,8 @@
 <body>
     <header id="header">
         <img class="logoVero" src="./images/logoVero.jpg" alt="Logo Vero Strizinec">
+    <!--    <input type="checkbox" class="off-canvas-btn">
+        <label class="off-canvas-burguer"></label> -->
         <nav class="navbar">
         <ul class="navbar">
             <li><a href="index.html#home">Sobre Mi</a></li>
@@ -106,22 +108,19 @@
     <!--Sección de contacto-->
     <section id="contact" class="contact">
         <h2 class="contact__title">Contacto</h2>
-            
+    
+    <section id="form-container">
         <form action="" class="form" method="post"> <!--el action dice donde se va a enviar el formulario. El metodo GET para envio lo manda por la URL, el metodo POST lo envia de forma oculta-->
-            <label for="nombre">Nombre <!--el atributo for se vincula con el imput del formulario con el mismo id-->
-            <input type="text" name="nombre" id="nombre" placeholder="Escribi tu nombre" autocomplete="on" required>
-            </label> <!--el atributo name es el nombre del formulario-->
-            <label for="apellido">Apellido <!--el atributo for se vincula con el imput del formulario con el mismo id-->
-            <input type="text" name="apellido" id="apellido" placeholder="Escribi tu apellido" autocomplete="on"  required> <!--el atributo name es el nombre del formulario-->
-            </label>
-            <label for="email">Email <!--el atributo for se vincula con el imput del formulario con el mismo id-->
-            <input type="email" name="correo" placeholder="Escribi tu email" autocomplete="on" required>
-            </label>
-            <label for="comentario">Comentario
+            <label for="nombre">Nombre </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autocomplete="on" required>
+            <label for="apellido">Apellido </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Tu apellido" autocomplete="on"  required>
+            <label for="email">Email  </label>
+            <input type="email" name="correo" placeholder="Tu email" autocomplete="on" required>
+            <label for="comentario">Comentario </label>
             <textarea name="comentario" placeholder="Dejame tu comentario" cols="30" rows="5" required></textarea>
-            </label>
+            
             <input class="boton" type="submit">
-        
         </form>
     </section>
 </main>
