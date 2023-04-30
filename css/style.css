@@ -422,7 +422,21 @@ a:hover {
 
 /* CONTACTO */
 
+.form-logoVero {
+    margin-top: 70px;
+    width: 400px;
+    height: 350px;
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
 #form-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.6);
   
 }
 
@@ -433,12 +447,11 @@ label {
 }
 
 .form {
-    width: 400px;
+    width: 300px;
     padding: 40px;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
-    border-radius: 10%;
-    
+    margin-left: 20px;
+    margin-right: 10px;
+     
 }
 .form > * {
     margin-top: 5px;
