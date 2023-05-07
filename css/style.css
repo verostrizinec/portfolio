@@ -532,3 +532,47 @@ input, textarea {
 .part2 {
     margin-left: 0;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 320px) {
+    .home__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px
+    }
+    .fotoVero {
+        display: none;
+    }
+    .proyects__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .certifications__grid img {
+        display: flex;
+        width: 100%;
+    
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+        margin-left: 20%;
+     
+    }
+
+    .footer-container {
+    width: 100%;
+    display: flex;  
+    justify-content:space-around;
+    align-items: center;
+    }
+
+
+    .grid-container {
+        width: 100%;
+    }
+
+}
