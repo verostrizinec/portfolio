@@ -628,3 +628,27 @@ input, textarea {
         margin-top: 10%;
     }
     }
+
+    @media screen and (min-width: 1000px) {
+
+
+        #form-container {
+           width: 100%;
+           margin-left: 0;
+        }
+
+        html, body {
+            overflow-x: hidden;
+        }
+
+        .navbar {
+        display: flex;
+        font-size: 1.3rem;
+        margin-right: 50px;
+        }
+
+        .logoVero {
+            margin-left: 10%;
+        }
+
+    }
