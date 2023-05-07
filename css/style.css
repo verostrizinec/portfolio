@@ -36,12 +36,6 @@ body {
 
 }
 
-
-.home__container {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 1fr;
-}
 .logoVero { /* poner efecto en el logo */
     width: 120px;
     height: 120px;
@@ -76,6 +70,8 @@ body {
     align-items: center;
     font-size: 1.3rem;
     margin-right: 200px;
+    width: max-content;
+    max-width: 1200px;
       
 }
 
@@ -128,6 +124,7 @@ section {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
+
 }
 
 .home__title--decorated { /* poner que el nombre destacado tenga algun efecto */
@@ -188,7 +185,7 @@ section {
     border-bottom: double;
     margin-top: auto;
     text-align: center;
-
+    
 }
 
 
@@ -210,16 +207,15 @@ a:hover {
 
 /* FOTO */
 
-#fotoVero img { /* ver como poner una sombra a la foto sin q se vea el cuadrado. Poner que la foto no se vea sobre el navbar */
-    /* width: 600px;
-    height: auto;
-    margin: 0; */
-        width: 550px;
+#fotoVero img { 
+        width: 60%;
         height: auto;
         object-fit: cover;
         object-position: 0 50%;
         position: sticky;
         z-index: -1;
+        margin-top: 10%;
+        margin-left: 30%;
 }
 
 #fotoVero .fotoVero { /* esto lo hice copy paste, estudiar */
@@ -394,8 +390,8 @@ a:hover {
 
 .form-logoVero {
     margin-top: 70px;
-    width: 400px;
-    height: 350px;
+    width: 30%;
+    height: 10%;
     margin-right: 20px;
     margin-left: 10px;
 
@@ -418,7 +414,7 @@ label {
 }
 
 .form {
-    width: 250px;
+    width: 30%;
     padding: 40px;
     margin-left: -20px;
     margin-right: 10px;
@@ -535,7 +531,7 @@ input, textarea {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
     html, body {
         overflow-x: hidden;
     }
@@ -615,40 +611,58 @@ input, textarea {
     }
 
     textarea, input {
-        width: 100%; 
+        width: 150%; 
        
     }
 
     .form input[type="submit"] {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin-left: 25%;
         margin-top: 10%;
     }
+    *, ::after, ::before {
+    box-sizing:content-box;
     }
 
-    @media screen and (min-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #f7dbe1; 
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        font-size: 16px;
+                
+    }
 
+    .navbar li {
+        padding: 20px 0;
+    }
 
-        #form-container {
-           width: 100%;
-           margin-left: 0;
-        }
+    .logoVero {
+        display: none;
 
-        html, body {
-            overflow-x: hidden;
-        }
+    }
 
-        .navbar {
-        display: flex;
-        font-size: 1.3rem;
-        margin-right: 50px;
-        }
+    .btn-navbar {
+        display: block;
+    }
 
-        .logoVero {
-            margin-left: 10%;
-        }
+    }
+
+    /* MENU RESPONSIVE */
+
+    .btn-navbar {
+        color: #f76c8a;
+        background: none;
+        border: none;
+        font-size: 150%;
+        padding: 0 20px;
+        display: none;
 
     }
