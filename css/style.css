@@ -398,8 +398,8 @@ a:hover {
 }
 
 #form-container {
-  display: flex;
-  justify-content: space-evenly;
+display: flex;
+justify-content: center;
   margin-left: 15%;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,0.6);
@@ -607,7 +607,7 @@ input, textarea {
     .form-logoVero {
         width: 50%;
         height: 50%;
-        margin-top: 30px;
+
     }
 
     textarea, input {
@@ -623,9 +623,7 @@ input, textarea {
         margin-left: 25%;
         margin-top: 10%;
     }
-    *, ::after, ::before {
-    box-sizing:content-box;
-    }
+
 
     .navbar {
         flex-direction: column;
