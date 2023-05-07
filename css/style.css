@@ -584,6 +584,11 @@ input, textarea {
              
     }
 
+    .skills__grid {
+    gap: 30px;
+    margin-right: 20%;
+
+    }
     .footer-container {
     width: 100%;
     display: flex;  
