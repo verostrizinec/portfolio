@@ -535,32 +535,53 @@ input, textarea {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
+    html, body {
+        overflow-x: hidden;
+    }
     .home__container {
         display: flex;
         flex-wrap: wrap;
         gap: 30px
     }
+    
+    .aboutMe__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 30%;
+
+    }
+
+    .home__title,
+    .home__title--decorated {
+        font-size: 1.8rem;
+    }
+
+    .myHistory, .papi {
+       font-size: 12px;
+    }
+
     .fotoVero {
         display: none;
     }
+
     .proyects__grid {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
+        margin-right: 30%;
     }
 
     .certifications__grid img {
-        display: flex;
-        width: 100%;
+        width: 80%;
     
     }
 
     main {
         width: 100%;
         height: auto;
-        margin-left: 20%;
-     
+        margin-left: 10%;
+             
     }
 
     .footer-container {
