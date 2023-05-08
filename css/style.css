@@ -37,8 +37,8 @@ body {
 }
 
 .logoVero { /* poner efecto en el logo */
-    width: 120px;
-    height: 120px;
+    width: 8%;
+    height: 5%;
     display: flex;
     justify-content: flex-start;
     margin-left: 250px;
@@ -399,7 +399,7 @@ a:hover {
 
 #form-container {
 display: flex;
-justify-content: center;
+justify-content:space-around;
   margin-left: 15%;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,0.6);
@@ -419,6 +419,11 @@ label {
     margin-left: -20px;
     margin-right: 10px;
      
+}
+
+.form-logoVero {
+    padding-top: 5%;
+    width: 30%;
 }
 .form > * {
     margin-top: 5px;
@@ -531,7 +536,7 @@ input, textarea {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
     html, body {
         overflow-x: hidden;
     }
@@ -539,6 +544,11 @@ input, textarea {
         display: flex;
         flex-wrap: wrap;
         gap: 30px
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .aboutMe__content {
@@ -599,19 +609,22 @@ input, textarea {
 
 
     #form-container {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         margin-left: 0;
     }
 
     .form-logoVero {
-        width: 50%;
-        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
 
     }
 
     textarea, input {
-        width: 150%; 
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; 
        
     }
 
@@ -624,6 +637,7 @@ input, textarea {
         margin-top: 10%;
     }
 
+    
 
     .navbar {
         flex-direction: column;
