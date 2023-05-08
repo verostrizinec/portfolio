@@ -609,27 +609,15 @@ input, textarea {
 
 
     #form-container {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-wrap: wrap;
         margin-left: 0;
-    }
-
-    .form-logoVero {
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    textarea, input {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%; 
-       
+        margin-right: 15px;
     }
 
     .form input[type="submit"] {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -637,6 +625,9 @@ input, textarea {
         margin-top: 10%;
     }
 
+    .form {
+        width: auto;
+    }
     
 
     .navbar {
