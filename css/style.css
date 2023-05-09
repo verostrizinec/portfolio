@@ -96,30 +96,6 @@ a:hover {
     
 }
 
-/* 
-.navbar {
-    display: flex;
-    align-items: center;
-    font-size: 1.3rem;
-    margin-right: 200px;
-    width: max-content;
-    max-width: 1200px;
-      
-}
-
-.navbar ul li a:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-.navbar a:hover{
-    color: rgb(247, 99, 131);  
-    text-decoration: none;   
-
-}  */
-#btn-menu {
-    display: none;
-}
 
 .menu ul {
     display: flex;
@@ -128,6 +104,7 @@ a:hover {
     margin-right: 200px;
     width: max-content;
     max-width: 1200px;
+    color: #000;
     
 }
 
@@ -140,6 +117,16 @@ a:hover {
     color: rgb(247, 99, 131);  
     text-decoration: none; 
 }
+
+#btn-menu {
+    display: none;
+}
+
+label img{
+    visibility: hidden;
+}
+
+
 main {
     margin-left: 15%;
     margin-right: 15%;
@@ -685,9 +672,12 @@ input, textarea {
 
     #btn-menu:checked ~ .menu {
         margin: 0;
-    }
 
     }
 
+    label img{
+        visibility: visible;
+    }
 
-    /* MENU RESPONSIVE */
+
+    }
