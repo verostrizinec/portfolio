@@ -12,6 +12,8 @@ html {
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+      
     }
 
 *,::after,::before {
@@ -152,7 +154,7 @@ strong {
 }
 
 section {
-    padding-bottom: 40px;
+    padding-bottom: 8%;
 }
 
 .papi {
