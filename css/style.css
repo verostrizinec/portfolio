@@ -36,24 +36,6 @@ body {
 
 }
 
-.logoVero { /* poner efecto en el logo */
-    width: 8%;
-    height: 5%;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 250px;
-}
-
-#header img {
-    transition: transform 1.5s ease-in-out;
-    cursor: pointer;
-}
-
-#header img:hover { /* esto hace que se agrande el logo */
-    transform: perspective(30rem) translateZ(8rem);
-
-}
-
 .social__media a img { 
     transition: transform 1.5s ease-in-out;
     cursor: pointer;
@@ -64,7 +46,57 @@ body {
 
 }
 
+.logoVero { /* poner efecto en el logo */
+    width: 15%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+}
 
+header img {
+    transition: transform 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+header img:hover { /* esto hace que se agrande el logo */
+    transform: perspective(30rem) translateZ(8rem);
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #f7dbe1;
+    width: 100%;
+    height: 100px;
+    box-shadow: 10px 15px 64px -10px rgba(0,0,0,0.83);
+    border-bottom: double;
+    margin-top: auto;
+    text-align: center;
+    
+}
+
+
+li {
+    list-style: none;
+    padding-right: 40px;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 5px 5px 5px #f76c8a;
+    
+}
+
+/* 
 .navbar {
     display: flex;
     align-items: center;
@@ -84,8 +116,30 @@ body {
     color: rgb(247, 99, 131);  
     text-decoration: none;   
 
-} 
+}  */
+#btn-menu {
+    display: none;
+}
 
+.menu ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-right: 200px;
+    width: max-content;
+    max-width: 1200px;
+    
+}
+
+.menu ul li a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: rgb(247, 99, 131);  
+    text-decoration: none; 
+}
 main {
     margin-left: 15%;
     margin-right: 15%;
@@ -174,36 +228,6 @@ section {
     margin-bottom: 0;
 }
 
-#header {
-    position: sticky;
-    top: 0;
-    background-color: #f7dbe1;
-    display: flex;
-    width: 100%;
-    height: auto;
-    box-shadow: 10px 15px 64px -10px rgba(0,0,0,0.83);
-    border-bottom: double;
-    margin-top: auto;
-    text-align: center;
-    
-}
-
-
-li {
-    list-style: none;
-    padding-right: 40px;
-    text-decoration: none;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-shadow: 5px 5px 5px #f76c8a;
-    
-}
 
 /* FOTO */
 
@@ -534,6 +558,10 @@ input, textarea {
     margin-left: 0;
 }
 
+.btn-menu {
+    display: none;
+}
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 768px) {
@@ -629,48 +657,37 @@ input, textarea {
         width: auto;
         margin: auto;
     }
-    
 
-    /* .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
-        background-color: #f7dbe1; 
-        position: fixed;
-        left: 0;
-        top: 45px;
-        width: 100%;
-        font-size: 16px;
-                
-    }
-
-    .navbar li {
-        padding: 20px 0;
-    }
 
     .logoVero {
         display: flex;
         justify-content: flex-start;
         margin-left: 20%;
 
-    } */
+    } 
+    .menu {
+        position: absolute;
+        background: #f7dbe1;
+        width: 100%;
+        top: 105%;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
 
-    /* .btn-navbar {
-        display:block;
-    } */
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 5%;
+    }
+    .menu li {
+        border-top: 1px solid #fcdaf9;
+    }
 
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
 
     }
 
+
     /* MENU RESPONSIVE */
-
-    /* .btn-menu {
-        color: #f76c8a;
-        background: none;
-        border: none;
-        font-size: 150%;
-        padding: 0 20px;
-        display: none;
-
-    } */
