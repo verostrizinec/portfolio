@@ -49,7 +49,7 @@ body {
 }
 
 .logoVero { /* poner efecto en el logo */
-    width: 15%;
+    width: 25%;
     height: 15%;
     display: flex;
     justify-content: flex-start;
@@ -73,7 +73,7 @@ header {
     top: 0;
     background-color: #f7dbe1;
     width: 100%;
-    height: 100px;
+    height: 150px;
     box-shadow: 10px 15px 64px -10px rgba(0,0,0,0.83);
     border-bottom: double;
     margin-top: auto;
@@ -236,7 +236,7 @@ section {
     transition-property: background-color;
     transition-duration: 300ms;
     transition-timing-function: ease;
-    transition-delay: 0.2s;
+    transition-delay: 0.3s;
     border-radius: 100%;
         -webkit-animation-name: fotoVero; 
         animation-name: fotoVero;
@@ -299,6 +299,7 @@ section {
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-fill-mode: both;
+    animation-delay: .3s;
 
 }
 
@@ -321,6 +322,7 @@ section {
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-fill-mode: both;
+    animation-delay: .3s;
 
 }
 /* CERTIFICADOS */
@@ -341,7 +343,14 @@ section {
     border-radius: 1rem;
 }
 
-.certificado__desarrollo, .certificado__js {
+.certificado__freeCode {
+    max-width: 100%;
+    width: 600px;
+    height: 450px;
+    border-radius: 1rem;
+}
+
+.certificado__desarrollo, .certificado__js, .certificado__freeCode {
     border: thick solid #000;
     margin-left: auto;
     margin-bottom: 3rem;
@@ -394,6 +403,7 @@ section {
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    animation-delay: .3s;
 
     
 }
@@ -551,12 +561,15 @@ input, textarea {
     display: none;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES: CAMBIAR A MOBILE FIRST */
 
 @media all and (max-width: 768px) {
     html, body {
         overflow-x: hidden;
+
     }
+
+
 
     .home__container {
         display: flex;
@@ -598,12 +611,6 @@ input, textarea {
     
     }
 
-    main {
-        width: 100%;
-        height: auto;
-        margin-left: 10%;
-             
-    }
 
     .skills__grid {
     gap: 30px;
@@ -647,13 +654,9 @@ input, textarea {
         margin: auto;
     }
 
-
-    .logoVero {
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 20%;
-
-    } 
+    .logoVero img {
+        width: 10%;
+    }
     .menu {
         position: absolute;
         background: #f7dbe1;
@@ -679,7 +682,9 @@ input, textarea {
 
     label img{
         visibility: visible;
+        position: sticky;
+       
+        
     }
 
-
-    }
+}
