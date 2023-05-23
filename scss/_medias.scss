@@ -2,7 +2,7 @@
 
 /* Media query para dispositivos moviles */
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width:300px) and (max-width: 767px) {
     html, body {
         overflow-x: hidden;
 
@@ -69,14 +69,20 @@
 
 
     #form-container {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 0;
+    width: 90%;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,0.6);
-    width: 80%;
     }
+
+    .form {
+        margin-right: 155%;
+    }
+
+    .form-logoVero {
+        visibility: hidden;
+    }
+
+
 
     .form input[type="submit"] {
         width: auto;
@@ -87,10 +93,7 @@
         margin-top: 10%;
     }
 
-    .form {
-        width: auto;
-        margin: auto;
-    }
+
 
     .logoVero img {
         width: 10%;
