@@ -8,9 +8,9 @@ html {
 *,::after,::before {
     box-sizing: inherit;
 } */
-/* MEDIA QUERIES:  */
-/* Media query para dispositivos moviles */
-@media screen and (min-width: 300px) and (max-width: 767px) {
+/* MEDIA QUERIES: */
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 767px) {
   html, body {
     overflow-x: hidden;
   }
@@ -61,20 +61,18 @@ html {
     width: 90%;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Añade un padding interior al formulario */
   }
   .form {
-    margin-right: 155%;
+    width: 100%; /* Ajusta el ancho del formulario al contenedor */
+  }
+  .form input[type=submit] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 10px;
   }
   .form-logoVero {
     visibility: hidden;
-  }
-  .form input[type=submit] {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 25%;
-    margin-top: 10%;
   }
   .logoVero img {
     width: 10%;
@@ -152,25 +150,21 @@ html {
     flex-direction: row;
   }
   #form-container {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 0;
+    width: 80%; /* Ajusta el ancho del formulario según necesites */
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-    width: 80%;
-  }
-  .form input[type=submit] {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 25%;
-    margin-top: 10%;
+    margin: auto; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Añade un padding interior al formulario */
   }
   .form {
-    width: auto;
-    margin: auto;
+    width: 100%; /* Ajusta el ancho del formulario al contenedor */
+  }
+  .form input[type=submit] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 10px;
+  }
+  .form-logoVero {
+    visibility: hidden;
   }
   .logoVero img {
     width: 10%;
@@ -697,9 +691,9 @@ input, textarea {
   display: none;
 }
 
-/* MEDIA QUERIES:  */
-/* Media query para dispositivos moviles */
-@media screen and (min-width: 300px) and (max-width: 767px) {
+/* MEDIA QUERIES: */
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 767px) {
   html, body {
     overflow-x: hidden;
   }
@@ -750,20 +744,18 @@ input, textarea {
     width: 90%;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    margin: auto; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Añade un padding interior al formulario */
   }
   .form {
-    margin-right: 155%;
+    width: 100%; /* Ajusta el ancho del formulario al contenedor */
+  }
+  .form input[type=submit] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 10px;
   }
   .form-logoVero {
     visibility: hidden;
-  }
-  .form input[type=submit] {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 25%;
-    margin-top: 10%;
   }
   .logoVero img {
     width: 10%;
@@ -841,25 +833,21 @@ input, textarea {
     flex-direction: row;
   }
   #form-container {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 0;
+    width: 80%; /* Ajusta el ancho del formulario según necesites */
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-    width: 80%;
-  }
-  .form input[type=submit] {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 25%;
-    margin-top: 10%;
+    margin: auto; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Añade un padding interior al formulario */
   }
   .form {
-    width: auto;
-    margin: auto;
+    width: 100%; /* Ajusta el ancho del formulario al contenedor */
+  }
+  .form input[type=submit] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 10px;
+  }
+  .form-logoVero {
+    visibility: hidden;
   }
   .logoVero img {
     width: 10%;

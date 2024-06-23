@@ -1,13 +1,10 @@
-/* MEDIA QUERIES:  */
+/* MEDIA QUERIES: */
 
-/* Media query para dispositivos moviles */
-
-@media screen and (min-width:300px) and (max-width: 767px) {
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 767px) {
     html, body {
         overflow-x: hidden;
-
     }
-
 
     .home__container {
         display: flex;
@@ -15,13 +12,10 @@
         gap: 30px;
     }
 
-
-    
     .aboutMe__content {
         display: flex;
         flex-wrap: wrap;
         margin-right: 30%;
-
     }
 
     .home__title,
@@ -30,7 +24,7 @@
     }
 
     .myHistory, .papi {
-       font-size: 1rem;
+        font-size: 1rem;
     }
 
     .fotoVero {
@@ -46,19 +40,17 @@
 
     .certifications__grid img {
         width: 80%;
-    
     }
-
 
     .skills__grid {
-    gap: 30px;
-    margin-right: 20%;
-
+        gap: 30px;
+        margin-right: 20%;
     }
+
     .footer-container {
-    width: 100%;
-    display: flex;  
-    justify-content: flex-start;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .redes__sociales img {
@@ -67,37 +59,31 @@
         flex-direction: row;
     }
 
-
     #form-container {
-    width: 90%;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+        width: 90%;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+        margin: auto; /* Centra el formulario horizontalmente */
+        padding: 20px; /* Añade un padding interior al formulario */
     }
 
     .form {
-        margin-right: 155%;
+        width: 100%; /* Ajusta el ancho del formulario al contenedor */
+    }
+
+    .form input[type="submit"] {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-top: 10px;
     }
 
     .form-logoVero {
         visibility: hidden;
     }
 
-
-
-    .form input[type="submit"] {
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 25%;
-        margin-top: 10%;
-    }
-
-
-
     .logoVero img {
         width: 10%;
     }
+
     .menu {
         position: absolute;
         background: #f7dbe1;
@@ -112,32 +98,26 @@
         gap: 15px;
         margin-left: 5%;
     }
+
     .menu li {
         border-top: 1px solid #fcdaf9;
     }
 
     #btn-menu:checked ~ .menu {
         margin: 0;
-
     }
 
-    label img{
+    label img {
         visibility: visible;
         position: sticky;
-       
-        
     }
-
 }
 
 /* Media query para tablets */
-
 @media screen and (min-width: 768px) and (max-width: 1300px) {
     html, body {
         overflow-x: hidden;
-
     }
-
 
     .home__container {
         display: flex;
@@ -145,13 +125,10 @@
         gap: 30px;
     }
 
-
-    
     .aboutMe__content {
         display: flex;
         flex-wrap: wrap;
         margin-right: 30%;
-
     }
 
     .home__title,
@@ -160,7 +137,7 @@
     }
 
     .myHistory, .papi {
-       font-size: 1rem;
+        font-size: 1rem;
     }
 
     .fotoVero {
@@ -176,19 +153,17 @@
 
     .certifications__grid img {
         width: 80%;
-    
     }
-
 
     .skills__grid {
-    gap: 30px;
-    margin-right: 20%;
-
+        gap: 30px;
+        margin-right: 20%;
     }
+
     .footer-container {
-    width: 100%;
-    display: flex;  
-    justify-content: flex-start;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .redes__sociales img {
@@ -197,34 +172,31 @@
         flex-direction: row;
     }
 
-
     #form-container {
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 0;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
-    width: 80%;
-    }
-
-    .form input[type="submit"] {
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 25%;
-        margin-top: 10%;
+        width: 80%; /* Ajusta el ancho del formulario según necesites */
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+        margin: auto; /* Centra el formulario horizontalmente */
+        padding: 20px; /* Añade un padding interior al formulario */
     }
 
     .form {
-        width: auto;
-        margin: auto;
+        width: 100%; /* Ajusta el ancho del formulario al contenedor */
+    }
+
+    .form input[type="submit"] {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-top: 10px;
+    }
+
+    .form-logoVero {
+        visibility: hidden;
     }
 
     .logoVero img {
         width: 10%;
     }
+
     .menu {
         position: absolute;
         background: #f7dbe1;
@@ -239,20 +211,17 @@
         gap: 15px;
         margin-left: 5%;
     }
+
     .menu li {
         border-top: 1px solid #fcdaf9;
     }
 
     #btn-menu:checked ~ .menu {
         margin: 0;
-
     }
 
-    label img{
+    label img {
         visibility: visible;
         position: sticky;
-       
-        
     }
-
 }
