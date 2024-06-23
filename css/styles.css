@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reseteo que debe existir en todo css:
 
 html {
@@ -7,6 +8,197 @@ html {
 *,::after,::before {
     box-sizing: inherit;
 } */
+/* MEDIA QUERIES:  */
+/* Media query para dispositivos moviles */
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .home__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .aboutMe__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30%;
+  }
+  .home__title,
+  .home__title--decorated {
+    font-size: 1.8rem;
+  }
+  .myHistory, .papi {
+    font-size: 1rem;
+  }
+  .fotoVero {
+    display: none;
+  }
+  .proyects__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-right: 30%;
+  }
+  .certifications__grid img {
+    width: 80%;
+  }
+  .skills__grid {
+    gap: 30px;
+    margin-right: 20%;
+  }
+  .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .redes__sociales img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #form-container {
+    width: 90%;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  }
+  .form {
+    margin-right: 155%;
+  }
+  .form-logoVero {
+    visibility: hidden;
+  }
+  .form input[type=submit] {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+  .logoVero img {
+    width: 10%;
+  }
+  .menu {
+    position: absolute;
+    background: #f7dbe1;
+    width: 100%;
+    top: 105%;
+    margin-left: -100%;
+    transition: all 0.5s;
+  }
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 5%;
+  }
+  .menu li {
+    border-top: 1px solid #fcdaf9;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  label img {
+    visibility: visible;
+    position: sticky;
+  }
+}
+/* Media query para tablets */
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .home__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .aboutMe__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30%;
+  }
+  .home__title,
+  .home__title--decorated {
+    font-size: 1.8rem;
+  }
+  .myHistory, .papi {
+    font-size: 1rem;
+  }
+  .fotoVero {
+    display: none;
+  }
+  .proyects__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-right: 30%;
+  }
+  .certifications__grid img {
+    width: 80%;
+  }
+  .skills__grid {
+    gap: 30px;
+    margin-right: 20%;
+  }
+  .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .redes__sociales img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #form-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    width: 80%;
+  }
+  .form input[type=submit] {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+  .form {
+    width: auto;
+    margin: auto;
+  }
+  .logoVero img {
+    width: 10%;
+  }
+  .menu {
+    position: absolute;
+    background: #f7dbe1;
+    width: 100%;
+    top: 105%;
+    margin-left: -100%;
+    transition: all 0.5s;
+  }
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 5%;
+  }
+  .menu li {
+    border-top: 1px solid #fcdaf9;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  label img {
+    visibility: visible;
+    position: sticky;
+  }
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -18,19 +210,17 @@ html {
 }
 
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
   margin-left: auto;
   margin-right: auto;
 }
 
 body {
-  color: black;
+  color: #876645;
   width: 100%;
   height: auto;
   margin-top: 0;
-  background-color: #ffffff;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #EAD9C7;
 }
 
 .social__media a img {
@@ -64,32 +254,33 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #ffffff;
+  background-color: #e7d6c3; /* Color de fondo del header */
   width: 100%;
   height: 150px;
-  box-shadow: 10px 15px 34px -5px #fdcad5;
-  border-bottom: double;
-  margin-top: auto;
   text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para separar del fondo del body */
 }
 
-li {
-  list-style: none;
-  padding-right: 40px;
-  text-decoration: none;
+.menu ul {
+  list-style: none; /* Quita los marcadores de lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+  margin: 0; /* Elimina el margen predeterminado de la lista */
 }
 
-a {
-  text-decoration: none;
-  color:#000;
+.menu ul li {
+  display: inline-block; /* Alinea los elementos de la lista en línea */
+  padding-right: 20px; /* Espaciado entre cada elemento de la lista */
 }
 
-a:hover {
-  text-shadow: 5px 5px 5px #f76c8a;
+.menu ul li a {
+  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+  color: #000; /* Cambia el color del texto a negro */
+  transition: text-shadow 0.3s ease;
 }
 
-a:visited {
-  color:#000;
+.menu ul li a:hover {
+  color: #6D4925; /* Cambia el color del texto al color deseado cuando se pasa el cursor por encima */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .menu ul {
@@ -108,7 +299,7 @@ a:visited {
 }
 
 .menu a:hover {
-  color: #f76c8a;
+  color: #6D4925;
   text-decoration: none;
 }
 
@@ -131,16 +322,10 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  text-shadow: 4px 0px 4px #f17791;
 }
 
 p {
   font-size: 1.2rem;
-}
-
-strong {
-  font-weight: bolder;
-  text-shadow: 2px 4px 10px #f17791;
 }
 
 section {
@@ -148,8 +333,9 @@ section {
 }
 
 .papi {
-  font-family: "Dancing Script", cursive;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
+  font-style: italic;
   font-size: 1.5rem;
 }
 
@@ -159,11 +345,13 @@ section {
   flex-direction: row;
 }
 
-.home__title--decorated { /* poner que el nombre destacado tenga algun efecto */
-  font-size: 3.5rem;
-  font-style: italic;
-  color: #f76c8a;
-  text-shadow: 5px 5px 5px #f17791;
+.home__title {
+  transition: text-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.home__title--decorated:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .hi { /* poner efecto de saludo con la mano */
@@ -218,7 +406,7 @@ section {
 }
 
 #fotoVero .fotoVero { /* esto lo hice copy paste, estudiar */
-  background-color: #fcc5d2;
+  background-color: #6D4925;
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: ease;
@@ -253,7 +441,7 @@ section {
   }
 }
 #fotoVero .fotoVero:hover {
-  background-color: #fcc5d2;
+  background-color: #6D4925;
   border-radius: 80%;
 }
 
@@ -411,14 +599,14 @@ label {
 .form > * {
   margin-top: 5px;
   margin-bottom: 2px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1rem;
   border-radius: 5px;
   text-align: start;
 }
 
 .form input[type=submit] {
-  background-color: #f17791;
+  background-color: #6D4925;
   color: #000;
   font-weight: bold;
   text-align: center;
@@ -432,7 +620,7 @@ label {
 }
 
 input, textarea {
-  background-color: #fcdaf9;
+  background-color: #EAD9C7;
   border-style: solid;
   border-radius: 5%;
   text-align: start;
@@ -456,8 +644,8 @@ input, textarea {
 }
 
 .frase__papi {
-  font-family: "Dancing Script", cursive;
-  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
   font-size: 1.1rem;
   text-align: center;
 }
