@@ -8,8 +8,6 @@ html {
 *,::after,::before {
     box-sizing: inherit;
 } */
-/* MEDIA QUERIES: */
-/* Media query para dispositivos móviles */
 @media screen and (max-width: 767px) {
   html, body {
     overflow-x: hidden;
@@ -26,13 +24,13 @@ html {
   }
   .home__title,
   .home__title--decorated {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Ejemplo: ajusta el tamaño del título */
   }
   .myHistory, .papi {
-    font-size: 1rem;
+    font-size: 1rem; /* Ejemplo: ajusta el tamaño del texto */
   }
   .fotoVero {
-    display: none;
+    display: none; /* Ejemplo: oculta la sección fotoVero */
   }
   .proyects__grid {
     display: flex;
@@ -41,7 +39,7 @@ html {
     margin-right: 30%;
   }
   .certifications__grid img {
-    width: 80%;
+    width: 80%; /* Ejemplo: ajusta el ancho de las imágenes de certificados */
   }
   .skills__grid {
     gap: 30px;
@@ -58,24 +56,26 @@ html {
     flex-direction: row;
   }
   #form-container {
-    width: 90%;
+    width: 90%; /* Ajusta el ancho del formulario según necesidades */
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     margin: auto; /* Centra el formulario horizontalmente */
     padding: 20px; /* Añade un padding interior al formulario */
   }
+  label, input, textarea {
+    margin-left: -75%;
+  }
   .form {
     width: 100%; /* Ajusta el ancho del formulario al contenedor */
   }
-  .form input[type=submit] {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin-top: 10px;
+  form button.enviar {
+    margin-left: -12%;
   }
   .form-logoVero {
     visibility: hidden;
   }
   .logoVero img {
-    width: 10%;
+    width: 10%; /* Ejemplo: ajusta el tamaño del logo */
   }
   .menu {
     position: absolute;
@@ -101,7 +101,6 @@ html {
     position: sticky;
   }
 }
-/* Media query para tablets */
 @media screen and (min-width: 768px) and (max-width: 1300px) {
   html, body {
     overflow-x: hidden;
@@ -118,13 +117,13 @@ html {
   }
   .home__title,
   .home__title--decorated {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Ejemplo: ajusta el tamaño del título */
   }
   .myHistory, .papi {
-    font-size: 1rem;
+    font-size: 1rem; /* Ejemplo: ajusta el tamaño del texto */
   }
   .fotoVero {
-    display: none;
+    display: none; /* Ejemplo: oculta la sección fotoVero */
   }
   .proyects__grid {
     display: flex;
@@ -133,7 +132,7 @@ html {
     margin-right: 30%;
   }
   .certifications__grid img {
-    width: 80%;
+    width: 80%; /* Ejemplo: ajusta el ancho de las imágenes de certificados */
   }
   .skills__grid {
     gap: 30px;
@@ -150,7 +149,7 @@ html {
     flex-direction: row;
   }
   #form-container {
-    width: 80%; /* Ajusta el ancho del formulario según necesites */
+    width: 80%; /* Ajusta el ancho del formulario según necesidades */
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     margin: auto; /* Centra el formulario horizontalmente */
@@ -167,7 +166,7 @@ html {
     visibility: hidden;
   }
   .logoVero img {
-    width: 10%;
+    width: 10%; /* Ejemplo: ajusta el tamaño del logo */
   }
   .menu {
     position: absolute;
@@ -735,8 +734,6 @@ input, textarea {
   display: none;
 }
 
-/* MEDIA QUERIES: */
-/* Media query para dispositivos móviles */
 @media screen and (max-width: 767px) {
   html, body {
     overflow-x: hidden;
@@ -753,13 +750,13 @@ input, textarea {
   }
   .home__title,
   .home__title--decorated {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Ejemplo: ajusta el tamaño del título */
   }
   .myHistory, .papi {
-    font-size: 1rem;
+    font-size: 1rem; /* Ejemplo: ajusta el tamaño del texto */
   }
   .fotoVero {
-    display: none;
+    display: none; /* Ejemplo: oculta la sección fotoVero */
   }
   .proyects__grid {
     display: flex;
@@ -768,7 +765,7 @@ input, textarea {
     margin-right: 30%;
   }
   .certifications__grid img {
-    width: 80%;
+    width: 80%; /* Ejemplo: ajusta el ancho de las imágenes de certificados */
   }
   .skills__grid {
     gap: 30px;
@@ -785,24 +782,26 @@ input, textarea {
     flex-direction: row;
   }
   #form-container {
-    width: 90%;
+    width: 90%; /* Ajusta el ancho del formulario según necesidades */
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     margin: auto; /* Centra el formulario horizontalmente */
     padding: 20px; /* Añade un padding interior al formulario */
   }
+  label, input, textarea {
+    margin-left: -75%;
+  }
   .form {
     width: 100%; /* Ajusta el ancho del formulario al contenedor */
   }
-  .form input[type=submit] {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin-top: 10px;
+  form button.enviar {
+    margin-left: -12%;
   }
   .form-logoVero {
     visibility: hidden;
   }
   .logoVero img {
-    width: 10%;
+    width: 10%; /* Ejemplo: ajusta el tamaño del logo */
   }
   .menu {
     position: absolute;
@@ -828,7 +827,6 @@ input, textarea {
     position: sticky;
   }
 }
-/* Media query para tablets */
 @media screen and (min-width: 768px) and (max-width: 1300px) {
   html, body {
     overflow-x: hidden;
@@ -845,13 +843,13 @@ input, textarea {
   }
   .home__title,
   .home__title--decorated {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Ejemplo: ajusta el tamaño del título */
   }
   .myHistory, .papi {
-    font-size: 1rem;
+    font-size: 1rem; /* Ejemplo: ajusta el tamaño del texto */
   }
   .fotoVero {
-    display: none;
+    display: none; /* Ejemplo: oculta la sección fotoVero */
   }
   .proyects__grid {
     display: flex;
@@ -860,7 +858,7 @@ input, textarea {
     margin-right: 30%;
   }
   .certifications__grid img {
-    width: 80%;
+    width: 80%; /* Ejemplo: ajusta el ancho de las imágenes de certificados */
   }
   .skills__grid {
     gap: 30px;
@@ -877,7 +875,7 @@ input, textarea {
     flex-direction: row;
   }
   #form-container {
-    width: 80%; /* Ajusta el ancho del formulario según necesites */
+    width: 80%; /* Ajusta el ancho del formulario según necesidades */
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     margin: auto; /* Centra el formulario horizontalmente */
@@ -894,7 +892,7 @@ input, textarea {
     visibility: hidden;
   }
   .logoVero img {
-    width: 10%;
+    width: 10%; /* Ejemplo: ajusta el tamaño del logo */
   }
   .menu {
     position: absolute;
