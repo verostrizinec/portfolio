@@ -73,6 +73,7 @@ header {
     display: flex;
     align-items: center;
     position: sticky;
+    z-index: 1000;
     top: 0;
     background-color: #e7d6c3; /* Color de fondo del header */
     width: 100%;
@@ -285,10 +286,17 @@ section {
 
 }
 
+.proyects__grid a {
+    margin-right: 8%;
+    text-align: center;
+    text-decoration: none;
+    color: $texto;
+}
+
 @keyframes susulenta {
     from {
         opacity: 0;
-        transform:rotate(120deg);
+        transform:rotate(-120deg);
     }
 
     to {
@@ -299,7 +307,7 @@ section {
 }
 .susulenta:hover {
     animation-name: susulenta;
-    animation-duration: 1.5s;
+    animation-duration: 1.0s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-fill-mode: both;
@@ -322,13 +330,59 @@ section {
 
 .tritato:hover {
     animation-name: tritato;
-    animation-duration: 1.5s;
+    animation-duration: 1.0s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-fill-mode: both;
-    animation-delay: .3s;
+    animation-delay: .2s;
 
 }
+
+@keyframes calculadora {
+    from {
+        opacity: 0;
+        transform:rotate(-120deg);
+    }
+
+    to {
+        opacity: 2;
+     
+    }
+    
+}
+
+.calculadora:hover {
+    animation-name: calculadora;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: .3s,
+}
+
+@keyframes adivinanza {
+    from {
+        opacity: 0;
+        transform:rotate(-120deg);
+    }
+
+    to {
+        opacity: 2;
+     
+    }
+    
+}
+
+.adivinanza:hover {
+    animation-name: adivinanza;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: .3s,
+}
+
+
 /* CERTIFICADOS */
 
 
