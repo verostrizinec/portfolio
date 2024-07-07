@@ -130,25 +130,6 @@ let skillsContent = `
 
     skills.innerHTML = skillsContent;
 
-// selecciono el contenido de la seccion de certificados
-
-let certifications = document.getElementById('certifications');
-
-// creo el contenido para esa la seccion de certificados
-
-let certificationsContent = `
-    <h2 class="certifications__title">Certificados</h2>
-        <div class="certifications__grid">
-            <img class="certificado__desarrollo" src="./images/desarrolloWeb (2).png" alt="Certificado de Desarrollo Web">
-            <img class="certificado__js" src="./images/javaScript.PNG" alt="Certificado de JavaScript">
-            <img class="certificado__react" src="./images/ReactJS.jpg" alt="Certificado de ReactJS">
-            <img class="certificado__freeCode" src="./images/cert.CSS-freeCodeCamp.jpg" alt="Certificado de Responsive Design de freeCodeCamp">
-        </div>
-
-`
-
-    certifications.innerHTML = certificationsContent;
-
 // selecciono el contenido de la seccion de contacto
 
 let contact = document.getElementById('contact');
@@ -198,5 +179,5 @@ let footerContent = `
     </div>
     `
 
-    footer.innerHTML = footerContentContent;
+    footer.innerHTML = footerContent;
 })
