@@ -1,4 +1,4 @@
-/* Reseteo que debe existir en todo css:
+/* Reseteo que debe existir en todo css: */
 
 html {
     box-sizing: border-box;
@@ -6,21 +6,19 @@ html {
 
 *,::after,::before {
     box-sizing: inherit;
-} */
+}
 
 
+/* Importaciones */
 @import "colors";
 @import "fonts";
 @import "medias";
-
-
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 10rem;
-      
-    }
+}
 
 *,::after,::before {
     box-sizing: inherit;
@@ -38,7 +36,6 @@ body {
     height: auto;
     margin-top: 0;
     background-color: $background;
-
 }
 
 .social__media a img { 
@@ -48,7 +45,6 @@ body {
 
 .social__media a img:hover { /* esto hace que se agrande el logo */
     transform: perspective(100rem) translateZ(30rem);
-
 }
 
 .logoVero { /* poner efecto en el logo */
@@ -66,7 +62,6 @@ header img {
 
 header img:hover { /* esto hace que se agrande el logo */
     transform: perspective(30rem) translateZ(8rem);
-
 }
 
 header {
@@ -82,8 +77,39 @@ header {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para separar del fondo del body */
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
 
+body.dark-mode header {
+    background-color: #1f1f1f; /* Fondo oscuro para el header */
+    color: #e0e0e0; /* Texto claro */
+}
 
+body.dark-mode .menu ul li a {
+    color: #e0e0e0; /* Texto del menú en color claro */
+}
+
+/* Estilos para el botón de cambio de modo */
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+/* Ajustes para íconos */
+#dark-mode-toggle .fas {
+    color: $photo-color;
+}
+
+body.dark-mode #dark-mode-toggle .fas {
+    color: $texto;
+}
 
 .menu ul {
     list-style: none; /* Quita los marcadores de lista */
@@ -107,8 +133,6 @@ header {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-
-
 .menu ul {
     display: flex;
     align-items: center;
@@ -117,7 +141,6 @@ header {
     width: max-content;
     max-width: 1200px;
     color: #000;
-    
 }
 
 .menu ul li a:visited {
@@ -125,7 +148,7 @@ header {
     text-decoration: none;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: $text-hover;  
     text-decoration: none; 
 }
@@ -134,10 +157,9 @@ header {
     display: none;
 }
 
-label img{
+label img {
     visibility: hidden;
 }
-
 
 main {
     margin-left: 15%;
@@ -171,7 +193,6 @@ section {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
-
 }
 
 .home__title {
@@ -187,24 +208,24 @@ section {
     display: inline-block;
     cursor: pointer;  
     transform-origin: 50% 100%;
-  }
+}
   
 @keyframes sayHi {
     0% {
-      transform: rotatez(-13deg);
+        transform: rotatez(-13deg);
     }
     100% {
-      transform: rotatez(13deg);
+        transform: rotatez(13deg);
     }
-  }
+}
   
 .hi:hover {
-   animation-name: sayHi;
-   animation-duration: 1.2s;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-  }
+    animation-name: sayHi;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 .titulo {
     margin-left: 0;
@@ -218,23 +239,23 @@ section {
     padding: 5px;
     text-decoration: none;
 }
+
 .home__title {
     margin-top: 100px;
     margin-bottom: 0;
 }
 
-
 /* FOTO */
 
 #fotoVero img { 
-        width: 60%;
-        height: auto;
-        object-fit: cover;
-        object-position: 0 50%;
-        position: sticky;
-        z-index: -1;
-        margin-top: 10%;
-        margin-left: 30%;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    object-position: 0 50%;
+    position: sticky;
+    z-index: -1;
+    margin-top: 10%;
+    margin-left: 30%;
 }
 
 #fotoVero .fotoVero { /* esto lo hice copy paste, estudiar */
@@ -244,33 +265,32 @@ section {
     transition-timing-function: ease;
     transition-delay: 0.3s;
     border-radius: 100%;
-        -webkit-animation-name: fotoVero; 
-        animation-name: fotoVero;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        }
-        @-webkit-keyframes fotoVero {
-        0% {
+    -webkit-animation-name: fotoVero; 
+    animation-name: fotoVero;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fotoVero {
+    0% {
         opacity: 0;
         -webkit-transform: scale3d(.3, .3, .3);
         transform: scale3d(.3, .3, .3);
-        }
-        50% {
+    }
+    50% {
         opacity: 1;
-        }
-        }
-        @keyframes fotoVero {
-        0% {
+    }
+}
+@keyframes fotoVero {
+    0% {
         opacity: 0;
         -webkit-transform: scale3d(.3, .3, .3);
         transform: scale3d(.3, .3, .3);
-        }
-        50% {
+    }
+    50% {
         opacity: 1;
-        }
-    
+    }
 }
 
 #fotoVero .fotoVero:hover {
@@ -285,7 +305,6 @@ section {
     flex-direction: row;
     justify-content: center;
     max-width: 75%;
-
 }
 
 .proyects__grid a {
@@ -303,9 +322,7 @@ section {
 
     to {
         opacity: 2;
-    
     }
-    
 }
 .susulenta:hover {
     animation-name: susulenta;
@@ -314,7 +331,6 @@ section {
     animation-direction: alternate;
     animation-fill-mode: both;
     animation-delay: .3s;
-
 }
 
 @keyframes tritato {
@@ -325,9 +341,7 @@ section {
 
     to {
         opacity: 2;
-     
     }
-    
 }
 
 .tritato:hover {
@@ -337,7 +351,6 @@ section {
     animation-direction: alternate;
     animation-fill-mode: both;
     animation-delay: .2s;
-
 }
 
 @keyframes calculadora {
@@ -348,9 +361,7 @@ section {
 
     to {
         opacity: 2;
-     
     }
-    
 }
 
 .calculadora:hover {
@@ -370,9 +381,7 @@ section {
 
     to {
         opacity: 2;
-     
     }
-    
 }
 
 .adivinanza:hover {
@@ -384,9 +393,7 @@ section {
     animation-delay: .3s,
 }
 
-
 /* CERTIFICADOS */
-
 
 .certificado__desarrollo, .certificado__js, .certificado__freeCode, .certificado__react {
     border: thick solid #000;
@@ -404,8 +411,7 @@ section {
     height: 100%;
     object-fit: cover; /* asi es como pongo la imagen dentro del cuadrado */
     object-position: center;
-} 
-
+}
 
 /* tecnologias */
 
@@ -432,9 +438,7 @@ section {
 
     100% {
         opacity: 1;
-
     }
-    
 }
 
 .skill img:hover {
@@ -445,10 +449,7 @@ section {
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-delay: .3s;
-
-    
 }
-
 
 /* CONTACTO */
 
@@ -458,47 +459,42 @@ section {
     height: 10%;
     margin-right: 20px;
     margin-left: 10px;
-
 }
 
 #form-container {
-display: flex;
-justify-content:space-around;
-  margin-left: 15%;
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,0.6);
-  width: 80%;
-  
+    display: flex;
+    justify-content:space-around;
+    margin-left: 15%;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    width: 100%;
 }
-
+/*
 label {
     display: block;
     margin: .5em 0 0 0;
-
 }
-
-.form {
+*/
+#form {
     width: 30%;
     padding: 40px;
     margin-left: -20px;
     margin-right: 10px;
-     
 }
 
 .form-logoVero {
-    padding-top: 5%;
+    padding-top: 2%;
     width: 30%;
 }
-.form > * {
+
+#form > * {
     margin-top: 5px;
     margin-bottom: 2px;
     font-family: $font;
     font-size: 1rem;
     border-radius: 5px;
     text-align:start;
-
 }
-
 
 form button.enviar {
     background-color: $text-shadow;
@@ -507,7 +503,6 @@ form button.enviar {
     text-align:center;
     padding-top: 0;
     margin-left: 120px;
-
 }
 
 form button.enviar:hover {
@@ -524,10 +519,7 @@ input, textarea {
     padding-left: 5px;
 }
 
-
-
 /* FOOTER */
-
 
 .footer-container {
     padding-bottom: 10px;
@@ -535,8 +527,8 @@ input, textarea {
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    
 }
+
 .text__footer {
     font-size: 0.8rem;
     text-align: center;
@@ -548,7 +540,6 @@ input, textarea {
     font-style: italic;
     font-size: 1.1rem;
     text-align: center;
-
 }
 
 .socialmedia__link {
@@ -562,7 +553,6 @@ input, textarea {
 
 .redes__sociales a img:hover { /* esto hace que se agrande el logo */
     transform: perspective(100rem) translateZ(30rem);
-
 }
 
 @keyframes pulse {
@@ -575,7 +565,6 @@ input, textarea {
     100% {
         transform: scale(1);
     }
-    
 }
 
 .heart {
@@ -587,7 +576,6 @@ input, textarea {
     align-content: center;
     padding-bottom: 0;
     margin-bottom: 3px;
-    
 }
 
 .part1 {
@@ -601,5 +589,3 @@ input, textarea {
 .btn-menu {
     display: none;
 }
-
-@import "medias";

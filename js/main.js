@@ -141,7 +141,7 @@ let contactContent = `
     
     <div id="form-container" class="form">
         <img class="form-logoVero" src="./images/logoVero.jpg" alt="Logo Vero Strizinec">
-        <form action="" class="form" method="post"> <!--el action dice donde se va a enviar el formulario. El metodo GET para envio lo manda por la URL, el metodo POST lo envia de forma oculta-->
+        <form action="" id="form" method="post"> <!--el action dice donde se va a enviar el formulario. El metodo GET para envio lo manda por la URL, el metodo POST lo envia de forma oculta-->
             <label for="nombre">Nombre </label>
             <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autocomplete="on" required>
             <label for="apellido">Apellido </label>
@@ -180,4 +180,45 @@ let footerContent = `
     `
 
     footer.innerHTML = footerContent;
+
+// CAMBIAR COLOR DE FONDO
+
+    // Selecciono el boton de cambio de modo
+
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const currentTheme = localStorage.getItem('theme'); // Usamos localStorage.getItem para obtener el tema actualmente guardado en el almacenamiento local del navegador. localStorage es un objeto que permite almacenar datos de forma persistente en el navegador del usuario.
+
+    // si hay un tema guardado en localStorage, aplicarlo
+
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        if (currentTheme === 'dark-mode') {
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+    }
+
+    // Añadir el evento de clic para cambiar el tema
+
+    darkModeToggle.addEventListener('click', function () {
+        // Alternar la clase dark-mode en el cuerpo del documento
+        document.body.classList.toggle('dark-mode');
+
+        // Inicializar el tema como light-mode por defecto
+
+        let theme = 'light-mode';
+        if (document.body.classList.contains('dark-mode')) {
+            // Si el modo oscuro está activado, cambiar el tema a dark-mode
+            theme = 'dark-mode';
+            // Cambiar el ícono a un sol
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            // Cambiar el ícono a una luna
+            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+
+        // Guardar el tema en localStorage
+
+        localStorage.setItem('theme', theme);
+        
+    })
 })
