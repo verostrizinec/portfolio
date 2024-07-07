@@ -77,9 +77,12 @@ html {
   .logoVero img {
     width: 10%; /* Ejemplo: ajusta el tamaño del logo */
   }
+  .logoVero {
+    margin-left: 5%;
+  }
   .menu {
     position: absolute;
-    background: #f7dbe1;
+    background: #EAD9C7;
     width: 100%;
     top: 105%;
     margin-left: -100%;
@@ -168,9 +171,12 @@ html {
   .logoVero img {
     width: 10%; /* Ejemplo: ajusta el tamaño del logo */
   }
+  .logoVero {
+    margin-left: 5%;
+  }
   .menu {
     position: absolute;
-    background: #f7dbe1;
+    background: #EAD9C7;
     width: 100%;
     top: 105%;
     margin-left: -100%;
@@ -786,9 +792,12 @@ input, textarea {
   .logoVero img {
     width: 10%; /* Ejemplo: ajusta el tamaño del logo */
   }
+  .logoVero {
+    margin-left: 5%;
+  }
   .menu {
     position: absolute;
-    background: #f7dbe1;
+    background: #EAD9C7;
     width: 100%;
     top: 105%;
     margin-left: -100%;
@@ -877,9 +886,12 @@ input, textarea {
   .logoVero img {
     width: 10%; /* Ejemplo: ajusta el tamaño del logo */
   }
+  .logoVero {
+    margin-left: 5%;
+  }
   .menu {
     position: absolute;
-    background: #f7dbe1;
+    background: #EAD9C7;
     width: 100%;
     top: 105%;
     margin-left: -100%;

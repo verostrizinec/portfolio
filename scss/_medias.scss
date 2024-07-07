@@ -82,11 +82,16 @@
 
     .logoVero img {
         width: 10%; /* Ejemplo: ajusta el tamaño del logo */
+
+    }
+
+    .logoVero {
+        margin-left: 5%;
     }
 
     .menu {
         position: absolute;
-        background: #f7dbe1;
+        background: $background;
         width: 100%;
         top: 105%;
         margin-left: -100%;
@@ -199,9 +204,13 @@
         width: 10%; /* Ejemplo: ajusta el tamaño del logo */
     }
 
+    .logoVero {
+        margin-left: 5%;
+    }
+
     .menu {
         position: absolute;
-        background: #f7dbe1;
+        background: $background;
         width: 100%;
         top: 105%;
         margin-left: -100%;
