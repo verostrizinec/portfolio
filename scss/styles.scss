@@ -283,6 +283,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 75%;
 
 }
 
@@ -386,34 +387,15 @@ section {
 /* CERTIFICADOS */
 
 
-.certificado__desarrollo {
-    max-width: 100%;
-    width: 600px;
-    height: 450px;
-    border-radius: 1rem;
-    margin-right: 4rem;
-}
-
-.certificado__js {
-    max-width: 100%;
-    width: 600px;
-    height: 450px;
-    border-radius: 1rem;
-}
-
-.certificado__freeCode {
-    max-width: 100%;
-    width: 600px;
-    height: 450px;
-    border-radius: 1rem;
-}
-
-.certificado__desarrollo, .certificado__js, .certificado__freeCode {
+.certificado__desarrollo, .certificado__js, .certificado__freeCode, .certificado__react {
     border: thick solid #000;
+    max-width: 100%;
+    border-radius: 1rem;
     margin-left: auto;
     margin-bottom: 3rem;
     width: 600px;
     height: 450px;
+    margin-right: 4%;
 }
 
 .certifications__grid img {
