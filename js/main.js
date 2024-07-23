@@ -99,6 +99,10 @@ let skillsContent = `
         <strong class="skill_title">JavaScript</strong>
     </div>
     <div class="skill">
+        <img src="https://img.icons8.com/officel/144/react.png" alt="Icono React JS">
+        <strong class="skill_title">React JS</strong>
+    </div>
+    <div class="skill">
         <img src="https://img.icons8.com/color/144/null/git.png" alt="Icono GIT">
         <strong class="skill_title">Git</strong>
     </div>
@@ -140,8 +144,6 @@ let contactContent = `
         </a>
 
        </div>
-
-
     `
 
     contact.innerHTML = contactContent;
