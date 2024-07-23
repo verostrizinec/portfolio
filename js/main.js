@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="https://github.com/verostrizinec" target="_blank" class="socialmedia__link" title="GitHub">
             <img src="https://img.icons8.com/ios/50/null/github--v1.png" alt="Icono GitHub" class="github__icon" width="30px">
         </a>
-        <a href="https://drive.google.com/file/d/1paRz-iEklIYQLQGPpi6sz2gHGdbMv_8j/view?usp=sharing" target="_blank" class="socialmedia__link" title="Curriculum Vitae">Descargar CV</a>
+        <a href="https://drive.google.com/file/d/1S83l95uY4PbvJGuLvHwQF5bUrrRhoRIg/view?usp=sharing" target="_blank" class="socialmedia__link" title="Curriculum Vitae">Descargar CV</a>
     </div>
     </div>
     <div id="fotoVero">
@@ -76,26 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     proyectos.innerHTML = proyectContext;
 
-
-// selecciono el contenido de la seccion de certificados
-
-let certifications = document.getElementById('certifications');
-
-// creo el contenido para esa la seccion de proyectos
-
-let certificationsContent = `
-    <h2 class="certifications__title">Certificados</h2>
-        <div class="certifications__grid">
-            <img class="certificado__desarrollo" src="./images/desarrolloWeb (2).png" alt="Certificado de Desarrollo Web">
-            <img class="certificado__js" src="./images/javaScript.PNG" alt="Certificado de JavaScript">
-            <img class="certificado__react" src="./images/ReactJS.jpg" alt="Certificado de ReactJS">
-            <img class="certificado__freeCode" src="./images/cert.CSS-freeCodeCamp.jpg" alt="Certificado de Responsive Design de freeCodeCamp">
-        </div>
-
-`
-
-    certifications.innerHTML = certificationsContent;
-
 // selecciono el contenido de la seccion de tecnologias
 
 let skills = document.getElementById('skills');
@@ -113,19 +93,27 @@ let skillsContent = `
     <div class="skill">
         <img src="https://img.icons8.com/color/144/null/css3.png" alt="Icono CSS">
         <strong class="skill_title">CSS</strong>
-        </div>
-        <div class="skill">
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/144/javascript--v1.png" alt="Icono JavaScript">
+        <strong class="skill_title">JavaScript</strong>
+    </div>
+    <div class="skill">
         <img src="https://img.icons8.com/color/144/null/git.png" alt="Icono GIT">
         <strong class="skill_title">Git</strong>
-        </div>
-        <div class="skill">
+    </div>
+    <div class="skill">
         <img src="https://img.icons8.com/ios-filled/100/null/github.png"  alt="Icono GitHub">
         <strong class="skill_title">GitHub</strong>
-        </div>
-        <div class="skill">
+    </div>
+    <div class="skill">
         <img src="https://img.icons8.com/color/144/null/sass.png"  alt="Icono Sass">
         <strong class="skill_title">Sass</strong>
-       </div>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/144/nodejs.png"  alt="Icono Node JS">
+        <strong class="skill_title">Node JS</strong>
+    </div>
     `
 
     skills.innerHTML = skillsContent;
@@ -138,22 +126,22 @@ let contact = document.getElementById('contact');
 
 let contactContent = `
     <h2 class="contact__title">Contacto</h2>
-    
-    <div id="form-container" class="form">
-        <img class="form-logoVero" src="./images/logoVero.jpg" alt="Logo Vero Strizinec">
-        <form action="" id="form" method="post"> <!--el action dice donde se va a enviar el formulario. El metodo GET para envio lo manda por la URL, el metodo POST lo envia de forma oculta-->
-            <label for="nombre">Nombre </label>
-            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autocomplete="on" required>
-            <label for="apellido">Apellido </label>
-            <input type="text" name="apellido" id="apellido" placeholder="Tu apellido" autocomplete="on"  required>
-            <label for="email">Email  </label>
-            <input type="email" name="correo" placeholder="Tu email" autocomplete="on" required>
-            <label for="comentario">Comentario </label>
-            <textarea name="comentario" placeholder="Dejame tu comentario" cols="25" rows="5" required></textarea>
-        
-        <button class="enviar" onclick="">Enviar</button>
-        </form>
-    </div>
+
+       <p class="texto-contacto">Si llegaste hasta aca, ¡Espero que te haya gustado mi <strong>Porfolio</strong>!<br>
+       <br>
+       Si queres entrar en contacto conmigo te dejo mi <strong>Linkedin</strong> o <strong>Correo Electronico</strong>.</p>
+
+       <div class="contacto-redes">
+       <a href="https://www.linkedin.com/in/veronica-stri/" target="_blank" class="socialmedia__link" title="Linkedin">
+        <img width="80" height="80" src="https://img.icons8.com/color/144/linkedin.png" alt="linkedin" class="swing"/>
+       </a>
+        <a href="mailto:verostrizinec@gmail.com" class="socialmedia__link" title="Correo Electronico">
+            <img width="80" height="80" src="https://img.icons8.com/fluency/48/gmail-new.png" alt="Correo Electronico" class="swing"/>
+        </a>
+
+       </div>
+
+
     `
 
     contact.innerHTML = contactContent;
