@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="https://github.com/verostrizinec" target="_blank" class="socialmedia__link" title="GitHub">
             <img src="https://img.icons8.com/ios/50/null/github--v1.png" alt="Icono GitHub" class="github__icon" width="30px">
         </a>
-        <a href="https://drive.google.com/file/d/1S83l95uY4PbvJGuLvHwQF5bUrrRhoRIg/view?usp=sharing" target="_blank" class="socialmedia__link" title="Curriculum Vitae">Descargar CV</a>
+        <a href="https://drive.google.com/file/d/1169FLjenfKjdFgItlSb_dvnbeQvkPqP1/view?usp=drive_link" target="_blank" class="socialmedia__link" title="Curriculum Vitae">Descargar CV</a>
+        <a href="https://drive.google.com/file/d/1XLR8BF4mdzTKPwS27USRlzO8A0aLSm0S/view?usp=drive_link" target="_blank" class="socialmedia__link" title="Curriculum Vitae">Download CV-Portugues</a>
     </div>
     </div>
     <div id="fotoVero">
@@ -100,7 +101,7 @@ let skillsContent = `
     </div>
     <div class="skill">
         <img src="https://img.icons8.com/officel/144/react.png" alt="Icono React JS">
-        <strong class="skill_title">React JS</strong>
+        <strong class="skill_title">React JS & React Native</strong>
     </div>
     <div class="skill">
         <img src="https://img.icons8.com/color/144/null/git.png" alt="Icono GIT">
@@ -117,6 +118,18 @@ let skillsContent = `
     <div class="skill">
         <img src="https://img.icons8.com/color/144/nodejs.png"  alt="Icono Node JS">
         <strong class="skill_title">Node JS</strong>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/144/figma--v1.png"  alt="Icono Figma">
+        <strong class="skill_title">Figma</strong>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color-glass/144/bootstrap.png"  alt="Icono Bootstrap">
+        <strong class="skill_title">Bootstrap</strong>
+    </div>
+    <div class="skill">
+        <img src="https://img.icons8.com/color/144/vue-js.png"  alt="Icono Vue JS">
+        <strong class="skill_title">Vue JS</strong>
     </div>
     `
 
