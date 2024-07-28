@@ -279,6 +279,18 @@ body.dark-mode .menu ul li a {
   color: #e0e0e0; /* Texto del menú en color claro */
 }
 
+/* Estilos para los íconos en modo claro */
+.light-mode .linkedin__icon,
+.light-mode .github__icon {
+  filter: none; /* Sin filtro en modo claro */
+}
+
+/* Estilos para los íconos en modo oscuro */
+.dark-mode .linkedin__icon,
+.dark-mode .github__icon {
+  filter: invert(1) brightness(100%); /* Invertir colores para hacer los íconos blancos */
+}
+
 /* Estilos para el botón de cambio de modo */
 #dark-mode-toggle {
   background: none;
