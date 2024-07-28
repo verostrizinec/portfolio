@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let aboutMeText = `
         <p class="myHistory">
-            Mi nombre es <strong>Veronica Strizinec</strong>, tengo 36 años y vivo en Berazategui, Buenos Aires, Argentina. Soy Licenciada en Administración de Empresas y desde muy chiquita me gusta mucho y tengo mucha facilidad con la tecnología. En el año 2022 empecé a estudiar programación y descubrí un mundo fascinante.
+            Mi nombre es <strong>Veronica Strizinec</strong>, tengo 36 años y vivo en Berazategui, Buenos Aires, Argentina. Soy Licenciada en Administración de Empresas y Desarrolladora Web. Desde muy chiquita me gusta y tengo mucha facilidad con la tecnología. En el año 2022 empecé a estudiar programación y descubrí un mundo fascinante.
         </p>
         <p class="myHistory">
-            Inicié en este mundo de la tecnologia con cursos de CoderHouse donde aprendí <strong>HTML, CSS, Git, GitHub, JavaScript, etc.</strong> Me fascina conocer la forma en la que se puede dar vida a un sitio web y la forma en la que el usuario puede interactuar con el sitio.
+            Inicié en este mundo de la tecnologia con cursos de CoderHouse donde aprendí varios lenguajes de programación. Me fascina conocer la forma en la que se puede dar vida a un sitio web y la forma en la que el usuario puede interactuar con el sitio.
         </p>
         <p class="myHistory">
             Si bien el camino por momentos puede ser frustrante, hago honor a una frase que siempre me decia mi papá: <span class="papi">"Perservera y triunfarás."</span> 😇💗
