@@ -22,14 +22,19 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="https://github.com/verostrizinec" target="_blank" class="socialmedia__link" title="GitHub">
             <img src="https://img.icons8.com/ios/50/null/github--v1.png" alt="Icono GitHub" class="github__icon" width="30px">
         </a>
-        <a href="https://drive.google.com/file/d/1169FLjenfKjdFgItlSb_dvnbeQvkPqP1/view?usp=drive_link" target="_blank" class="socialmedia__link" title="Curriculum Vitae">Descargar CV</a>
-        <a href="https://drive.google.com/file/d/1XLR8BF4mdzTKPwS27USRlzO8A0aLSm0S/view?usp=drive_link" target="_blank" class="socialmedia__link" title="Curriculum Vitae">Download CV-Portugues</a>
+        <div class="cv-dropdown">
+            <button class="cv-button">Download CV</button>
+            <div class="cv-content">
+                <a href="https://drive.google.com/file/d/1169FLjenfKjdFgItlSb_dvnbeQvkPqP1/view?usp=drive_link" target="_blank">CV en Español</a>
+                <a href="https://drive.google.com/file/d/1XLR8BF4mdzTKPwS27USRlzO8A0aLSm0S/view?usp=drive_link" target="_blank">CV em Português</a>
+            </div>
+        </div>
     </div>
     </div>
     <div id="fotoVero">
         <img src="./images/PHOTO-2021-08-25-10-48-43.png" class="fotoVero" alt="Foto Vero Strizinec">
     </div>
-    `;
+`;
 
     // agrego el contenido al contenedor de la seccion home
 
@@ -67,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="https://susulenta.netlify.app/" class="susulenta"  target="_blank">
         <img src="./images/Logotipo_Tienda_de_Plantas_Minimalista_Verde_y_Blanco__1_-removebg-preview.png" alt="Logo Susulenta" width="200px" height="200px">Sitio Web de Suculentas</a>
     <a href="https://tritato.netlify.app/" class="tritato"  target="_blank">
-        <img src="./images/logo-removebg-preview.png" alt="Logo Tritato" width="300px" height="200px">Sitio Web de Tritato</a>
+        <img src="./images/tritato.png" alt="Logo Tritato" width="300px" height="200px">Sitio Web de Tritato</a>
     <a href="https://calculadora-verostri.netlify.app/" class="calculadora"  target="_blank">
         <img src="./images/calculadora.png" alt="Logo Calculadora" width="200px" height="200px">Calculadora</a>
     <a href="https://verostrizinec.github.io/adivinanza/" class="adivinanza"  target="_blank">
