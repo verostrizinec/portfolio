@@ -113,7 +113,7 @@ let skillsContent = `
         <strong class="skill_title">Git</strong>
     </div>
     <div class="skill">
-        <img src="https://img.icons8.com/ios-filled/100/null/github.png"  alt="Icono GitHub">
+        <img src="https://img.icons8.com/ios-filled/144/null/github.png"  alt="Icono GitHub">
         <strong class="skill_title">GitHub</strong>
     </div>
     <div class="skill">
@@ -131,10 +131,6 @@ let skillsContent = `
     <div class="skill">
         <img src="https://img.icons8.com/color-glass/144/bootstrap.png"  alt="Icono Bootstrap">
         <strong class="skill_title">Bootstrap</strong>
-    </div>
-    <div class="skill">
-        <img src="https://img.icons8.com/color/144/vue-js.png"  alt="Icono Vue JS">
-        <strong class="skill_title">Vue JS</strong>
     </div>
     `
 

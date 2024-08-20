@@ -459,16 +459,23 @@ section {
 /* tecnologias */
 
 .skills__grid {
-    display:flex;
-    flex-wrap:wrap;
-    gap: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%; /* Mantiene un espacio visible entre los íconos */
+    justify-content: center;
+    max-width: 1200px; /* Limita el ancho total del grid */
+    margin: 0 auto; /* Centra el grid en la pantalla */
+    padding-top: 5%;
 }
 
 .skill {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    align-items: center;
+    padding-bottom: 50px;
+    flex: 1 1 20%; /* Ajusta cómo se distribuyen los íconos */
+    max-width: 150px; /* Establece un ancho máximo para cada skill */
 }
 
 .skill img {
